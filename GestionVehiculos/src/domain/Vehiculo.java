@@ -9,7 +9,7 @@ package domain;
  *
  * @author milla
  */
-public class Vehiculo {
+public class Vehiculo extends Object{
     private String matricula;
     private String marca;
     private String modelo; 
@@ -57,6 +57,17 @@ public class Vehiculo {
     @Override
     public String toString() {
         return "Vehiculo{" + "matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + ", color=" + color + ", tarifa=" + tarifa + ", disponible=" + disponible + '}';
+    }
+    
+    //-----------------------------------------
+
+    public Vehiculo(String matricula, String marca, String modelo, String color, double tarifa, boolean disponible) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+        this.tarifa = tarifa;
+        this.disponible = disponible;
     }
     
     
