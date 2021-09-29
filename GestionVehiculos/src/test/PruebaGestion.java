@@ -17,6 +17,10 @@ public class PruebaGestion {
     public static void main(String[] args) {
        
         Vehiculo coche1 = new Vehiculo("1456KLÑ", "Opel", "Astra", "Rosa", 2134, true);
+        Vehiculo coche2 = new Vehiculo("6789KLÑ", "Nisan", "Astra", "Morada", 2134, true);
+        Vehiculo coche3 = new Vehiculo("9345KLÑ", "Honda", "Astra", "Blanco", 2134, true);
+        Vehiculo coche4 = new Vehiculo("2378KLÑ", "Toyota", "Astra", "Amarilla", 2134, true);
+        Vehiculo coche5 = new Vehiculo("8920KLÑ", "Opel", "Astra", "Negro", 2134, true);
         System.out.println("coche1 = " + coche1);
     }
     

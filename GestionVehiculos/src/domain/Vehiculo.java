@@ -16,7 +16,8 @@ public class Vehiculo extends Object{
     private String color;
     private double tarifa;
     private boolean disponible;
-    
+    private static  int contadorVehiculos;
+    private static int vehiculoID;
     //------------------------------------------------
 
     public String getMatricula() {
@@ -58,6 +59,10 @@ public class Vehiculo extends Object{
     public String toString() {
         return "Vehiculo{" + "matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + ", color=" + color + ", tarifa=" + tarifa + ", disponible=" + disponible + '}';
     }
+
+    public static int getVehiculoID() {
+        return vehiculoID;
+    }
     
     //-----------------------------------------
 
@@ -70,5 +75,8 @@ public class Vehiculo extends Object{
         this.disponible = disponible;
     }
     
+    public Vehiculo(){
+        this.vehiculoID = ++Vehiculo.contadorVehiculos;
+    }
     
 }
